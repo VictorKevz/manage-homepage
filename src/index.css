@@ -256,6 +256,6 @@ margin: 3rem auto 0 auto ;
 }
 @media (width <= 410px) {
  .inner-container{
-overflow-x: scroll;
+overflow-x: hidden;
 }  
 }
