@@ -18,8 +18,9 @@ function Navbar() {
       y: 0,
       transition: {
         type: "spring",
-        delay: 0.5,
-        stiffness: "300",
+        delay: 0.3,
+        duration:1,
+        stiffness: "400",
       },
     },
   };

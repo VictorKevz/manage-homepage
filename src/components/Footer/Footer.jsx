@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/footer.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
 import Form from "./Form/Form";
 import logo from "../../assets/images/footer-logo.svg";
 import yt from "../../assets/images/icon-youtube.svg";
@@ -21,37 +23,79 @@ function Footer() {
   ];
 
   return (
-    <div className="footer wrapper">
+    <motion.div
+      className="footer wrapper"
+      variants={fadeIn("up", 0)}
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{ once: false, amount: 0.7 }}
+    >
       <div className="footer-inner container">
-      <p className="copyright mobile">Copyright 2020. All Rights Reserved</p>
-
+      <motion.p
+          className="copyright mobile"
+          variants={fadeIn("right", 0.6)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          Copyright 2020. All Rights Reserved
+        </motion.p>
         <div className="logo-socials-container">
-          <div className="footer-logo-container">
+          <motion.div
+            className="footer-logo-container"
+            variants={fadeIn("left", 0.6)}
+            initial="hidden"
+            whileInView={"visible"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={logo} alt="footer-logo" className="footer-logo" />
-          </div>
-          <div className="socials-container">
+          </motion.div>
+          <motion.div
+            className="socials-container"
+            variants={fadeIn("left", 0.6)}
+            initial="hidden"
+            whileInView={"visible"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={fb} alt="" className="facebook-icon" />
             <img src={yt} alt="" className="youtube-icon" />
             <img src={twitter} alt="" className="twitter-icon" />
             <img src={pin} alt="" className="pinterest-icon" />
             <img src={ig} alt="" className="instagram-icon" />
-          </div>
+          </motion.div>
         </div>
         <div className="footer-links-wrapper">
           {footerLinks.map((obj) => (
-            <div key={obj.id} className="footer-link-group">
+            <motion.div
+              key={obj.id}
+              className="footer-link-group"
+              variants={fadeIn("right", 0.6)}
+              initial="hidden"
+              whileInView={"visible"}
+              viewport={{ once: false, amount: 0.1 }}
+            >
               <ul className="footer-links-container">
                 {obj.links.map((link, index) => (
-                  <li key={index} className="footer-link">{link}</li>
+                  <li key={index} className="footer-link">
+                    {link}
+                  </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <Form/>
-        <p className="copyright desktop">Copyright 2020. All Rights Reserved</p>
+        <Form />
+        <motion.p
+          className="copyright desktop"
+          variants={fadeIn("down", 0.6)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          Copyright 2020. All Rights Reserved
+        </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

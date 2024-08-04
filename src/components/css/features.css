@@ -27,8 +27,8 @@
   font-size: 3.75rem;
   line-height: 1.15;
   margin-top: 0.6rem;
-  letter-spacing: 0.03rem;
-  font-weight: 500;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
 }
 
 .feature-parag {
@@ -45,10 +45,17 @@
 }
 .feature-item {
   display: flex;
+  
+}
+.feature-item-wrapper{
+  display: flex;
   align-items: flex-start;
   gap: 2.7rem;
+  width: 100%;
 }
-
+.feature-item-wrapper.mobile {
+  display: none;
+}
 .feature-num-title-container {
   display: flex;
   align-items: center;
@@ -68,6 +75,7 @@
 .feature-item-info-container {
   display: flex;
   flex-direction: column;
+
 }
 .feature-item-title {
   font-size: 1.56rem;
@@ -82,9 +90,7 @@
 .feature-item-parag {
   margin-top: 2.2rem;
 }
-.feature-item-title.mobile {
-  display: none;
-}
+
 .feature-item-parag.first {
   max-width: 431px;
   letter-spacing: -.0065rem;
@@ -94,4 +100,14 @@
 } */
 .feature-item-parag.third {
   max-width: 375px;
+}
+
+.feature-num-title-mobile{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: var(--Very-Pale-Red);
+  border-radius: 2.8rem;
 }

@@ -21,7 +21,7 @@ html {
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   width: 100%;
-  background-color: var(--Very-Light-Gray);
+  background-color: #FFFFFF;
   /* color: red; */
   overflow-x: hidden;
 
@@ -65,5 +65,7 @@ li,a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* overflow-x: hidden; */
+
  
 }

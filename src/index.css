@@ -102,8 +102,8 @@ display: none;
 .hero{
   background-image: url("./assets/images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
-  background-position-y: -25%;
-  background-position-x: 30vw;
+  background-position-y: -100%;
+  background-position-x: 50vw;
 
 }
 .hero-inner{
@@ -146,8 +146,26 @@ margin: 3rem auto 0 auto ;
   justify-content: center;
   align-items: center;
 }
+.feature-item-wrapper.desktop{
+  display: none;
+}
+.feature-item-wrapper.mobile{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.4rem;
+}
 .feature-text-container{
-  text-align: center;
+ align-items: center;
+ text-align: center;
+ margin: 0 auto;
+   padding: 0 1.7rem;
+
+}
+.feature-title{
+  font-size:clamp(2rem, 8vw, 3.75rem)
+}
+.feature-item-title {
+  padding: 0;
 }
 .feature-parag {
   margin: 3rem auto 0 auto;
@@ -157,6 +175,15 @@ margin: 3rem auto 0 auto ;
 .testimonial{
   margin-top: 7rem;
 }
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link.testimonial-cta {
+  margin-top: 4rem;
+}
+
 
 /* ----------CTA & FOOTER & FORM ---------- */
 .cta{
@@ -176,6 +203,9 @@ margin: 3rem auto 0 auto ;
     gap: 0;
     flex-direction: column-reverse;
   }
+  .footer-logo-container{
+    margin: 0;
+  }
   .logo-socials-container{
     gap: 3rem;
     margin-top: 4rem;
@@ -183,6 +213,7 @@ margin: 3rem auto 0 auto ;
   .socials-container{
     gap: 3rem;
     transform: scale(1.5);
+    margin: 0;
   }
   .footer-links-container{
    text-align: left;
@@ -200,7 +231,7 @@ margin: 3rem auto 0 auto ;
   text-align: center;
   position: relative;
   margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .copyright.desktop{
   display: none;
@@ -223,4 +254,12 @@ margin: 3rem auto 0 auto ;
   font-size: 1.6rem;
 
 }
+
+}
+@media (width <= 410px) {
+ .inner-container{
+  /* overflow-x: hidden; */
+  overflow: -moz-hidden-unscrollable;
+
+}  
 }

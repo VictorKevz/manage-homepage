@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { fadeIn } from "../../../Variants";
 import Feedback from "./Feedback";
 
 import "./form.css";
@@ -37,7 +38,13 @@ function Form() {
       {isValid && showFeedback ? (
         <Feedback onClose={closeFeedback} />
       ) : (
-        <form className={`form-container`} onSubmit={handleSubmit}>
+        <motion.form 
+        className={`form-container`} onSubmit={handleSubmit}
+        variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            whileInView={"visible"}
+            viewport={{ once: false, amount: 0.1 }}
+        >
           <div className={`input field`}>
             <label htmlFor="myEmail">
               <input
@@ -60,7 +67,7 @@ function Form() {
               Go
             </button>
           </div>
-        </form>
+        </motion.form>
       )}
     </>
   );

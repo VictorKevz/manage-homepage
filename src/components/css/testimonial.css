@@ -15,12 +15,12 @@
   font-size: 3.75rem;
   line-height: 1.15;
   margin-bottom: 11.6rem;
-  letter-spacing: 0.03rem;
-  font-weight: 500;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
 }
 
 .mySwiper {
-  max-width: 1675px;
+  max-width: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -28,9 +28,6 @@
   position: relative;
   min-height: 315px;
   margin-top: -5rem;
-
-
-
 }
 
 .swiper-button-next,
@@ -43,13 +40,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 538.33px;
-  width: 100%;
+  padding: 0 2.5rem;
   height: 220px;
   flex-shrink: 0;
   transition: transform 0.5s ease-in-out;
   background-color: var(--Very-Light-Gray);
-  box-shadow: 0 .5rem 1rem hsla(233, 12%, 13%, 0.113) ;
+  box-shadow: 0 0.5rem 1rem hsla(233, 12%, 13%, 0.113);
   position: relative;
 }
 
@@ -83,33 +79,58 @@
 }
 
 .link.testimonial-cta {
-  margin-top: -.5rem;
-
+  margin-top: -0.5rem;
 }
-
-
 
 /* Swiper Pagination Dots */
 .swiper-pagination {
-    /* position: absolute;
-    text-align: center;
-    transition: 300ms opacity;
-    transform: translate3d(0, 0, 0);
-    z-index: 10; */
-    
-    width: 100%;
+  width: 100%;
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background: inherit;
+  border: 1px solid var(--Bright-Red);
+  opacity: 1;
+  border-radius: 50%;
+  transition: 300ms;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--Bright-Red);
+}
+
+/* Media Queries */
+.desktop-swiper {
+  display: none;
+}
+
+.mobile-swiper {
+  display: flex;
+  padding:  0 2.4rem;
+
+}
+.testimonial-card{
+  background-color: aquamarine;
+
+}
+
+@media (width >= 900px) {
+  .desktop-swiper {
+    display: flex;
+  }
+  .mobile-swiper {
     display: none;
   }
-  
-  .swiper-pagination-bullet {
-    background: inherit; 
-    border: 1px solid var(--Bright-Red);
-    opacity: 1; 
-    border-radius: 50%;
-    transition: 300ms;
+  .testimonial-card{
+    height: 220px;
+    /* padding: 2rem 1rem; */
   }
-  
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: var(--Bright-Red); 
-  }
+}
+@media (width >= 320px) {
+.testimonial-card{
+  height: 250px;
+  padding: 2rem 1rem;
+}
+}
