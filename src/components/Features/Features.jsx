@@ -11,7 +11,7 @@ function Features() {
         <article className="feature-text-container">
           <motion.h2
             className="feature-title"
-            // variants={fadeIn("down", 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.1 }}
@@ -20,7 +20,7 @@ function Features() {
           </motion.h2>
           <motion.p
             className="feature-parag"
-            // variants={fadeIn("right", 0.6)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.1 }}
@@ -48,7 +48,7 @@ function Features() {
                 <div className="feature-item-wrapper desktop">
                   <motion.span
                     className={`feature-item-num ${featureClassName}`}
-                    // variants={fadeIn("left", 0.2)}
+                    variants={fadeIn("left", 0.2)}
                     initial="hidden"
                     whileInView={"visible"}
                     viewport={{ once: false, amount: 0.2 }}
@@ -61,7 +61,7 @@ function Features() {
                   >
                     <motion.h3
                       className={`feature-item-title ${featureClassName}`}
-                      // variants={fadeIn("right", 0.2)}
+                      variants={fadeIn("right", 0.2)}
                       initial="hidden"
                       whileInView={"visible"}
                       viewport={{ once: false, amount: 0.2 }}
@@ -70,7 +70,7 @@ function Features() {
                     </motion.h3>
                     <motion.p
                       className={`feature-item-parag ${featureClassName}`}
-                      // variants={fadeIn("right", 0.3)}
+                      variants={fadeIn("right", 0.3)}
                       initial="hidden"
                       whileInView={"visible"}
                       viewport={{ once: false, amount: 0.2 }}
@@ -93,7 +93,7 @@ function Features() {
                     </motion.p>
                     <motion.h3
                       className={`feature-item-title ${featureClassName}`}
-                      // variants={fadeIn("right", 0.2)}
+                      variants={fadeIn("right", 0.2)}
                       initial="hidden"
                       whileInView={"visible"}
                       viewport={{ once: false, amount: 0.2 }}

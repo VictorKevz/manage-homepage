@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <motion.header
       className={`nav wrapper`}
-      // variants={navVariants}
+      variants={navVariants}
       initial="hidden"
       animate="visible"
     >

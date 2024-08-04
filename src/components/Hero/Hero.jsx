@@ -42,7 +42,7 @@ function Hero() {
         <AnimatePresence mode="wait">
         <motion.div 
         className="hero-image-container"
-        // variants={imageVariants}
+        variants={imageVariants}
           initial="hidden"
           animate="visible"
         >
@@ -50,7 +50,7 @@ function Hero() {
             src={illustration}
             alt="illustration-image"
             className="hero-img"
-            // variants={fadeIn("up", 0.1)}
+            variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.1 }}
@@ -60,14 +60,14 @@ function Hero() {
         <AnimatePresence mode="wait">
         <motion.section
           className={`hero-text-container`}
-          // variants={textVariants}
+          variants={textVariants}
           initial="hidden"
           animate="visible"
         >
           
           <motion.h1
             className="hero-title"
-            // variants={fadeIn("up", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.2 }}
@@ -78,7 +78,7 @@ function Hero() {
           
           <motion.p 
           className="hero-parag"
-          // variants={fadeIn("right", 0.2)}
+          variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.1 }}
@@ -88,7 +88,7 @@ function Hero() {
           </motion.p>
           <motion.a 
           className="link hero-cta"
-          // variants={fadeIn("up", 0.2)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.1 }}

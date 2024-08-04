@@ -40,7 +40,7 @@ function Form() {
       ) : (
         <motion.form 
         className={`form-container`} onSubmit={handleSubmit}
-        // variants={fadeIn("right", 0.6)}
+        variants={fadeIn("right", 0.6)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.1 }}
