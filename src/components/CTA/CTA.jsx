@@ -7,7 +7,7 @@ function CTA() {
   return (
     <motion.div 
     className={`cta wrapper`}
-    variants={fadeIn("up", 0)}
+    // variants={fadeIn("up", 0)}
     initial="hidden"
     whileInView={"visible"}
     viewport={{ once: false, amount: 0.2 }}
@@ -15,7 +15,7 @@ function CTA() {
       <div className={`cta-inner container`}>
         <motion.h5 
         className="cta-title"
-        variants={fadeIn("left", 0.4)}
+        // variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.2 }}
@@ -25,7 +25,7 @@ function CTA() {
 
         <motion.a 
         className="link cta-link"
-        variants={fadeIn("right", 0.4)}
+        // variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.2 }}

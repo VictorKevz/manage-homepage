@@ -25,7 +25,7 @@ function Footer() {
   return (
     <motion.div
       className="footer wrapper"
-      variants={fadeIn("up", 0)}
+      // variants={fadeIn("up", 0)}
       initial="hidden"
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.7 }}
@@ -33,7 +33,7 @@ function Footer() {
       <div className="footer-inner container">
       <motion.p
           className="copyright mobile"
-          variants={fadeIn("right", 0.6)}
+          // variants={fadeIn("right", 0.6)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.1 }}
@@ -43,7 +43,7 @@ function Footer() {
         <div className="logo-socials-container">
           <motion.div
             className="footer-logo-container"
-            variants={fadeIn("left", 0.6)}
+            // variants={fadeIn("left", 0.6)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.1 }}
@@ -52,7 +52,7 @@ function Footer() {
           </motion.div>
           <motion.div
             className="socials-container"
-            variants={fadeIn("left", 0.6)}
+            // variants={fadeIn("left", 0.6)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.1 }}
@@ -69,7 +69,7 @@ function Footer() {
             <motion.div
               key={obj.id}
               className="footer-link-group"
-              variants={fadeIn("right", 0.6)}
+              // variants={fadeIn("right", 0.6)}
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: false, amount: 0.1 }}
@@ -87,7 +87,7 @@ function Footer() {
         <Form />
         <motion.p
           className="copyright desktop"
-          variants={fadeIn("down", 0.6)}
+          // variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.1 }}

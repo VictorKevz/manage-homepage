@@ -20,8 +20,8 @@ export const fadeIn = (direction, delay) => {
       },
       exit: {
         opacity: 0,
-        y: direction === "up" ? -100 : direction === "down" ? 100 : 0,
-        x: direction === "left" ? "100%" : direction === "right" ? "-100%" : 0,
+        y: direction === "up" ? -0 : direction === "down" ? 30 : 0,
+        x: direction === "left" ? "30%" : direction === "right" ? "-30%" : 0,
         transition: {
           type: "tween",
           duration: 0.5,

@@ -91,21 +91,19 @@
   .link.nav-cta{
     display: none;
   }
+  /* BG PATTERN */
+  .bg-pattern{
+    
+    top: -25%;
+    right: -55vw;
+    transform: rotate(180deg) scale(0.7);
+  }
 }
 @media (width <= 1160px) {
 
 
-/* ----------HERO ---------- */
-.hero::after{
-display: none;
-}
-.hero{
-  background-image: url("./assets/images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position-y: -100%;
-  background-position-x: 50vw;
 
-}
+
 .hero-inner{
   flex-direction: column;
   text-align: center;
@@ -258,8 +256,6 @@ margin: 3rem auto 0 auto ;
 }
 @media (width <= 410px) {
  .inner-container{
-  /* overflow-x: hidden; */
-  overflow: -moz-hidden-unscrollable;
-
+overflow-x: scroll;
 }  
 }

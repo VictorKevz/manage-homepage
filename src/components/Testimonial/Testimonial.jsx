@@ -16,7 +16,7 @@ function Testimonial() {
       <div className="testimonial-inner container">
         <motion.h4
           className="testimonial-title"
-          variants={fadeIn("right", 0.2)}
+          // variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.2 }}
@@ -92,7 +92,7 @@ function Testimonial() {
       </div>
       <motion.a 
       className="link testimonial-cta"
-      variants={fadeIn("up", 0.5)}
+      // variants={fadeIn("up", 0.5)}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false, amount: 0.2 }}

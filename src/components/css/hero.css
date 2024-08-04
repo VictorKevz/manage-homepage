@@ -48,3 +48,22 @@
 .link.hero-cta {
   margin-top: 3.8rem;
 }
+.bg-pattern{
+  display: none;
+}
+
+@media (width <= 1200px) {
+  /* ----------HERO ---------- */
+ .hero::after{
+  display: none;
+} 
+.bg-pattern{
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: -25%;
+  right: -15vw;
+  transform: rotate(180deg);
+}
+
+}
