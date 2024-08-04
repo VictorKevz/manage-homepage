@@ -1,6 +1,6 @@
 .nav {
   z-index: 15;
-  position: fixed;
+  /* position: fixed; */
 }
 .nav-inner {
   position: relative;
